@@ -1,0 +1,150 @@
+@media screen and (max-width: 600px) {
+
+    /*スマホ用ブレイクポイント*/
+    header h1 {
+        display: none;
+    }
+    
+    .top-wrap img {
+        width: 150%;
+    }
+    
+    .top-wrap .text-box {
+        top: 0;
+        left: 30%;
+    }
+    
+    .top-wrap .text-box h2{
+        font-size: 1.2em;
+    }
+    
+    .top-wrap .text-box h2:nth-child(1) {
+        width: 80px;
+        height: 530px;
+        line-height: 4.2;
+        margin-top: 10px;
+    }
+    
+    .top-wrap .text-box h2:nth-child(2) {
+        width: 80px;
+        height: 330px;
+        line-height: 4.2;
+        margin-top: 300px
+    }
+    
+/*セクション-TANAKAのフレームメガネ*/
+    .tanakas-glasses {
+        display: block;
+        margin-top: 150px
+    }
+    
+    .tanakas-glasses img {
+        width: 100%;
+    }
+    
+    .tanakas-glasses .text-box {
+        width: 100%;
+    }
+    
+    .tanakas-glasses .text-box h3:nth-child(1) {
+        writing-mode: horizontal-tb;
+        text-align: center;
+    }
+    
+    .sales-talk h3:nth-child(1) {
+        width: 90%;
+    }
+    
+    .sales-talk h4 {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+    
+/*セクション-TANAKAメガネの特徴*/
+    .tanaka-glass-feature h3{
+        width: 60%;
+        margin-top: 0;
+    }
+    
+    .whattanakas-glasses {
+        display: block;
+    }
+    
+    .what-box {
+        width: 100%;
+        margin-top: 20%;
+    }
+    
+    .what-box .img-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+/*セクション-TANAKAメガネ２*/
+    .tanakas-glasses-2 h3 {
+        margin-top: 25%
+    }
+    
+    .glasses2-box {
+        display: block;
+    }
+    
+    .glasses2-box img {
+        width: 100%;
+    }
+    
+    .glasses2-box .text-box {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+/*セクション-プロダクト カラ一覧*/
+    
+    .product-column {
+        margin-top: 20%;
+    }
+    
+    .product-column .subImages img {
+        width: 32%;
+    }
+    
+/*オンラインショップへ誘導*/
+    .one a {
+        font-size: 1.3em;
+    }
+    
+    .two a {
+        font-size: 1em;
+    }
+    
+/*フッター*/
+
+    
+    .footer-box {
+        display: inline-block;
+    }
+    
+    footer .text-box {
+        width: 100%;
+    }
+
+    
+    footer .Fnavi-box {
+        display: none;
+    }
+    
+    .Fawesome-box {
+        width: 100%;
+        margin-left: 50px;
+        padding: 10px;;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

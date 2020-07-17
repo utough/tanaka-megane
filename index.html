@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="1960年創業のTANAKAメガネ。黒縁メガネが売りで、若い男性から中年まで親しまれてきました。スタンダードでハズレはないが、かっこいい。そんなTANAKAメガネ是非お試しください。">
+    <meta name="keywords" content="メガネ,メンズ,TANAKAメガネ">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" media="(max-width: 600px)">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/25b93a2da4.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+        <script>
+            $(function() {
+                $('.subImages img').click(function() {
+                    var $thisImg = $(this).attr('src');
+                    var $thisAlt = $(this).attr('alt');
+                    $('.mainImage img').attr({
+                        src: $thisImg,
+                        alt: $thisAlt
+                    });
+                });
+            });
+        </script>
+        <script>
+            $(window).on('load scroll', function() {
+
+                var box = $('.fadeIn');
+                var animated = 'animated';
+
+                box.each(function() {
+
+                    var boxOffset = $(this).offset().top;
+                    var scrollPos = $(window).scrollTop();
+                    var wh = $(window).height();
+
+                    //画面内のどの位置で処理を実行するかで「100」の値を変更
+                    if (scrollPos > boxOffset - wh + 30) {
+                        $(this).addClass(animated);
+                    }
+                });
+
+
+
+                $(function() {
+                    $('.subImages img').click(function() {
+                        var $thisImg = $(this).attr('src');
+                        var $thisAlt = $(this).attr('alt');
+                        $('.mainImage img').attr({
+                            src: $thisImg,
+                            alt: $thisAlt
+                        });
+                    });
+                });
+
+            });
+        </script>
+
+    <title></title> <!-- ここから！！ -->
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imgs/logo2.png">
+            <h1>タナカメガネ</h1>
+        </nav>
+    </header>
+    <div class="top-wrap">
+        <img src="imgs/top-man.jpg">
+        <div class="text-box">
+            <h2 class="fadeIn">どうせならかっこよく</h2>
+            <h2 class="fadeIn">世界を覗こう</h2>
+        </div>
+    </div>
+
+    <section class="tanakas-glasses">
+        <img src="imgs/top-glasses.png">
+        <div class="text-box">
+            <h3>TANAKAの</h3>
+            <h3>「フレームメガネ」</h3>
+        </div>
+    </section>
+
+    <section class="sales-talk">
+        <div class="bg-box">
+            <h3 class="fadeIn">ほんとうはかっこいいあなたへ</h3>
+
+            <p class="fadeIn">「どうせ」視力が悪いから…</p>
+            <p class="fadeIn">「どうせ」メガネだから…</p>
+
+            <h3 class="fadeIn">TANAKAでは</h3>
+
+            <p class="fadeIn">「どうせなら」かっこいい自分で</p>
+            <p class="fadeIn">世界を覗きたい</p>
+
+            <h4 class="fadeIn">「どうせ」なあなたを「どうせなら」にします。</h4>
+        </div>
+    </section>
+
+    <section class="tanaka-glass-feature">
+        <h3>TANAKAのメガネとは</h3>
+
+        <div class="whattanakas-glasses">
+            <div class="what-box">
+                <h4>1、デザイン</h4>
+                <div class="img-box">
+                    <img src="imgs/design.jpg">
+                </div>
+                <div class="text-box">
+                    <p>新しさとベーシックの良さを</p>
+                    <p>併せ持ったデザイン</p>
+                    <p>男性らしさとシンプルを追求</p>
+                </div>
+            </div>
+            <div class="what-box">
+                <h4>2、特殊加工のレンズ</h4>
+                <div class="img-box">
+                    <img src="imgs/lens.png">
+                </div>
+                <div class="text-box">
+                    <p>川崎レンズ株式会社との共同開発で</p>
+                    <p>通常のレンズよりも視界にフチ感が少なく</p>
+                    <p>長時間かけていても疲れにくい設計</p>
+                </div>
+            </div>
+            <div class="what-box">
+                <h4>3、ブルーライトカット</h4>
+                <div class="img-box">
+                    <img src="imgs/bluelight.png">
+                </div>
+                <div class="text-box">
+                    <p>TANAKAは全商品に</p>
+                    <p>ブルーライトカットレンズを使用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tanakas-glasses-2">
+        <h3>TANAKAの「フレームメガネ」</h3>
+
+        <div class="glasses2-box">
+            <img src="imgs/foot-glasses.png">
+            <div class="text-box">
+                <p>Webサイト限定で</p>
+                <p>¥13,990</p>
+                <p>通常価格¥26,000のところ</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-column">
+        <div class="mainImage">
+            <img src="imgs/product-color/black09.png">
+        </div>
+        <div class="subImages">
+            <img src="imgs/product-color/black09.png" alt="黒09">
+            <img src="imgs/product-color/brown52.png" alt="ブラウン52">
+            <img src="imgs/product-color/fox62.png" alt="フォックス62">
+        </div>
+        <p>TNF-120-09-000 TANAKAフレーム</p>
+    </section>
+
+    <p class="text-point one"><a href="">オンラインショップはこちら</a></p>
+    <p class="text-point two"><a href="">その他のラインナップ</a></p>
+
+
+    <footer>
+        <div class="footer-logo">
+            <img src="imgs/logo2.png">
+            <h5>タナカメガネ</h5>
+        </div>
+        <div class="footer-box">
+            <div class="text-box">
+                <p>北海道札幌市中央区南7条西11丁目6−3</p>
+                <p>田中ビル３階 (田中歯科向かい)</p>
+                <p>tel 011-012-3456</p>
+            </div>
+            <div class="Fnavi-box">
+                <ul>
+                    <li><a href="">タナカメガネ公式ページ</a></li>
+                    <li><a href="">お問い合わせページ</a></li>
+                    <li><a href="">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+            <div class="Fawesome-box">
+                <i class="fa fa-facebook-f fa-3x"></i>
+                <i class="fa fa-instagram fa-3x"></i>
+                <i class="fa fa-twitter fa-3x"></i>
+            </div>
+        </div>
+        <small><p>@tanaka-glasses</p></small>
+    </footer>
+</body>
+
+</html>

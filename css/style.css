@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*fontリンク*/
+/*明朝体 → font-family: "Sawarabi Mincho"; */
+/*ゴシック体 → font-family: "Sawarabi Gothic";*/
+/*縦書きはんなり → font-family: "Hannari";*/
+
+body {
+    background-color: #E0E0E0;
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+}
+
+header img {
+    width: 25px;
+    padding: 5px;
+}
+
+header h1 {
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: "Sawarabi Mincho";
+    color: maroon;
+    padding-top: 20px;
+}
+
+
+.top-wrap {
+    width: 100vw;
+    position: relative;
+}
+
+.top-wrap img {
+    width: 70%;
+    margin-left: auto;
+    padding: 3%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.top-wrap .text-box {
+    width: 20%;
+    height: 120vh;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 100;
+    writing-mode: tb-rl;
+    letter-spacing: 2em;
+}
+
+.top-wrap .text-box h2 {
+    background-color: #fff;
+    line-height: 4;
+    font-family: serif;
+    font-weight: normal;
+}
+
+.top-wrap .text-box h2:nth-child(1) {
+    width: 100px;
+    height: 600px;
+    padding-top: 70px;
+}
+
+.top-wrap .text-box h2:nth-child(2) {
+    width: 100px;
+    height: 400px;
+    padding-top: 70px;
+    margin-top: 300px;
+    margin-right: 50px;
+}
+
+.fadeIn {
+    transition: 1s;
+    opacity: 0;
+}
+
+.fadeIn.animated {
+    transition: 1s;
+    opacity: 1;
+}
+
+
+/*     セクション部分ここから    */
+.tanakas-glasses {
+    display: flex;
+    width: 100vw;
+    margin-top: 30vh;
+}
+
+.tanakas-glasses img {
+    width: 60%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.tanakas-glasses .text-box {
+    width: 40%;
+    margin: auto;
+}
+
+.tanakas-glasses .text-box h3:nth-child(1) {
+    writing-mode: tb-rl;
+    text-orientation: upright;
+    letter-spacing: 1em;
+    font-size: 1.7em;
+    font-weight: normal;
+    font-family: serif;
+    margin: 0 auto;
+}
+
+.tanakas-glasses .text-box h3:nth-child(2) {
+    margin-top: 5%;
+    font-weight: normal;
+    font-size: 1.7em;
+    font-family: serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+/*セールストークセクション*/
+.sales-talk {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sales-talk h3 {
+    margin: 15% 0;
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.sales-talk h3:nth-child(1) {
+    width: 30%;
+    margin: 15% auto;
+    background-color: #fff;
+    background: linear-gradient(transparent 50%, #fff 50%);
+}
+
+.sales-talk h3:nth-child(2) {
+    border-bottom: 1px solid maroon;
+}
+
+.sales-talk h4 {
+    margin: 15% 0 0 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.sales-talk p {
+    font-size: 1em;
+    font-weight: 100;
+    font-family: serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+
+
+/*タナカメガネの特徴３つ*/
+.tanaka-glass-feature {
+    width: 100vw;
+}
+
+.tanaka-glass-feature h3 {
+    width: 25%;
+    margin: 30% auto 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: normal;
+    background: linear-gradient(transparent 50%, #fff 50%);
+}
+
+.whattanakas-glasses {
+    display: flex;
+    width: 100vw;
+}
+
+.what-box {
+    width: 30%;
+    margin: 10% auto;
+}
+
+.what-box h4 {
+    font-size: 1.2em;
+    font-weight: normal;
+    font-family: serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.what-box p {
+    text-align: center;
+    margin-top: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+.what-box .text-box {
+    margin-top: 10%;
+}
+
+.what-box .img-box {
+    width: 100%;
+    height: 300px;
+    margin-top: 2%;
+}
+
+.what-box img {
+    width: 100%;
+    height: 100%;
+}
+
+/*タナカメガネ２*/
+.tanakas-glasses-2 {
+    width: 100vw;
+}
+
+.tanakas-glasses-2 h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: serif;
+    text-align: center;
+    margin: 10% 0 5% 0;
+}
+
+.glasses2-box {
+    display: flex;
+}
+
+.glasses2-box img {
+    width: 60%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.glasses2-box .text-box {
+    width: 60%;
+    margin-top: 13%;
+}
+
+.glasses2-box .text-box p {
+    font-weight: normal;
+    font-family: serif;
+    text-align: center;
+}
+
+.glasses2-box .text-box p:nth-child(1) {
+    font-size: 1.8em;
+}
+
+.glasses2-box .text-box p:nth-child(2) {
+    width: 25%;
+    font-size: 2em;
+    margin: 12% auto 0 auto;
+    border-bottom: 2px solid maroon;
+}
+
+.glasses2-box .text-box p:nth-child(3) {
+    font-size: 1.5em;
+    margin-top: 5%;
+    text-decoration: line-through;
+}
+
+/*プロダクト カラ一覧*/
+.product-column {
+    width: 100vw;
+    margin-top: 10%;
+}
+
+.product-column p {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.product-column .mainImage {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.product-column .mainImage img {
+    width: 100%;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+.product-column .subImages {
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.product-column .subImages img {
+    width: 32.9%;
+}
+
+
+.product-column .subImages img:nth-child(1):hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.product-column .subImages img:nth-child(2):hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.product-column .subImages img:nth-child(3):hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+/*オンラインショップへ誘導*/
+.text-point {
+    text-align: center;
+}
+
+.one {
+    margin-top: 10%;
+}
+
+.one a {
+    color: red;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.one a::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 8px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: skew(45deg);
+}
+
+.one a:hover {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.two {
+    margin-top: 3%;
+}
+
+.two a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.two a::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 8px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: skew(45deg);
+}
+
+.two a:hover {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+
+/*フッター*/
+footer {
+    width: 100vw;
+    margin-top: 10%;
+    background-color: #999;
+}
+.footer-logo {
+    display: flex;
+}
+
+.footer-logo img {
+    width: 25px;
+    padding: 10px
+}
+
+footer h5 {
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: "Sawarabi Mincho";
+    color: maroon;
+    padding-top: 10px;
+}
+
+.footer-box {
+    width: 100vw;
+    display: flex;
+    margin: 2% 0;
+}
+
+footer .text-box {
+    width: 30%;
+    padding: 1% 10%;
+}
+
+footer p {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+footer .Fnavi-box {
+    width: 25%;
+    padding: 1%;
+}
+
+.Fnavi-box ul li {
+    list-style-type: none;
+}
+
+.Fnavi-box ul li a {
+    color: #000;
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.Fnavi-box ul li a:hover {
+    opacity: 0.4;
+}
+
+.Fawesome-box {
+    width: 45%;
+    padding: 3% 0 1% 14%;
+    box-sizing: border-box;
+}
+
+.Fawesome-box i {
+    margin-right: 7%;
+}
+
+
+small p {
+    text-align: center;
+}
