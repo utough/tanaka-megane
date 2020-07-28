@@ -23,8 +23,12 @@ header nav {
     display: flex;
 }
 
+header .img-box {
+	width: 20%;
+}
+
 header img {
-    width: 25px;
+    width: 100%;
     padding: 5px;
 }
 
@@ -38,13 +42,18 @@ header h1 {
 
 
 .top-wrap {
-    width: 100vw;
+    width: 100%;
     position: relative;
 }
 
+.top-wrap .img-box {
+	width: 70%;
+	    margin-left: auto;
+}
+
 .top-wrap img {
-    width: 70%;
-    margin-left: auto;
+    width: 100%;
+
     padding: 3%;
     display: block;
     box-sizing: border-box;
@@ -132,7 +141,7 @@ header h1 {
 
 /*セールストークセクション*/
 .sales-talk {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -177,12 +186,12 @@ header h1 {
 
 /*タナカメガネの特徴３つ*/
 .tanaka-glass-feature {
-    width: 100vw;
+    width: 100%;
 }
 
 .tanaka-glass-feature h3 {
     width: 25%;
-    margin: 30% auto 0 auto;
+    margin: 50% auto 0 auto;
     text-align: center;
     font-size: 1.5em;
     font-family: serif;
@@ -192,7 +201,7 @@ header h1 {
 
 .whattanakas-glasses {
     display: flex;
-    width: 100vw;
+    width: 100%;
 }
 
 .what-box {
@@ -231,7 +240,7 @@ header h1 {
 
 /*タナカメガネ２*/
 .tanakas-glasses-2 {
-    width: 100vw;
+    width: 100%;
 }
 
 .tanakas-glasses-2 h3 {
@@ -282,7 +291,7 @@ header h1 {
 
 /*プロダクト カラ一覧*/
 .product-column {
-    width: 100vw;
+    width: 100%;
     margin-top: 10%;
 }
 
@@ -387,7 +396,7 @@ header h1 {
 
 /*フッター*/
 footer {
-    width: 100vw;
+    width: 100%;
     margin-top: 10%;
     background-color: #999;
 }
@@ -409,7 +418,7 @@ footer h5 {
 }
 
 .footer-box {
-    width: 100vw;
+    width: 100%;
     display: flex;
     margin: 2% 0;
 }
@@ -417,11 +426,13 @@ footer h5 {
 footer .text-box {
     width: 30%;
     padding: 1% 10%;
+	box-sizing: border-box;
 }
 
 footer p {
     font-size: 1em;
     line-height: 2em;
+
 }
 
 footer .Fnavi-box {
